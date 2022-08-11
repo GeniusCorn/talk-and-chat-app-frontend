@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@typescript-eslint/eslint-plugin': ^5.33.0
   '@typescript-eslint/parser': ^5.33.0
-  '@varlet/ui': ^1.27.19
+  '@varlet/ui': ^1.27.20
   '@vitejs/plugin-vue': ^3.0.1
   autoprefixer: ^10.4.8
   better-scroll: ^2.4.2
@@ -22,7 +22,7 @@ specifiers:
   vue-tsc: ^0.38.9
 
 dependencies:
-  '@varlet/ui': 1.27.19_vue@3.2.37
+  '@varlet/ui': 1.27.20_vue@3.2.37
   better-scroll: 2.4.2
   vue: 3.2.37
 
@@ -252,7 +252,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 18.6.5
+      '@types/node': 18.7.1
     dev: false
 
   /@types/json-schema/7.0.11:
@@ -267,8 +267,8 @@ packages:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
     dev: false
 
-  /@types/node/18.6.5:
-    resolution: {integrity: sha512-Xjt5ZGUa5WusGZJ4WJPbOT8QOqp6nDynVFRKcUt32bOgvXEoc6o085WNkYTMO7ifAj2isEfQQ2cseE+wT6jsRw==}
+  /@types/node/18.7.1:
+    resolution: {integrity: sha512-GKX1Qnqxo4S+Z/+Z8KKPLpH282LD7jLHWJcVryOflnsnH+BtSDfieR6ObwBMwpnNws0bUK8GI7z0unQf9bARNQ==}
     dev: false
 
   /@typescript-eslint/eslint-plugin/5.33.0_njno5y7ry2l2lcmiu4tywxkwnq:
@@ -397,8 +397,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@varlet/icons/1.27.19:
-    resolution: {integrity: sha512-pcAk1LptmtylRcDez58NlMO6/pen+FpDjv2lAAfslJRSGcf1mlg09E6wHjj2TSsqwWkHTNITtPsp2yobEIV0Gg==}
+  /@varlet/icons/1.27.20:
+    resolution: {integrity: sha512-5nQZ1mZv4xCBRFoW8M0X6EjQZOF9eBe+69hXjGSP3T050rPAv8/cYWaXNd4Iv74na9cdK461k4JGjfzFQMtI7A==}
     hasBin: true
     dependencies:
       commander: 6.2.1
@@ -409,17 +409,17 @@ packages:
       - supports-color
     dev: false
 
-  /@varlet/shared/1.27.19:
-    resolution: {integrity: sha512-329PrCTzmhIC9kxPsTcvDIoZyBjjSLU1TkeoHjAnUvskS4YDPohpUUC1JCqz2O6OBLffkoVOM86E4ddBPQqliw==}
+  /@varlet/shared/1.27.20:
+    resolution: {integrity: sha512-qtCcsClM0H/7UmZFr2c0PWqIP5eHclITew8rVGTKSfJdJKAWXSHy+KA+42T2yZ1cyOK1fsjulVsbqGSubAmI0Q==}
     dev: false
 
-  /@varlet/ui/1.27.19_vue@3.2.37:
-    resolution: {integrity: sha512-HSVBnWyx0HlFSZY9mbS1Ee8pq9rB2Nc9AfmKa3B0H6s9KgSRINZ4nn24GQQb8b6ZDXD8EEyMKYGQpa248vkepQ==}
+  /@varlet/ui/1.27.20_vue@3.2.37:
+    resolution: {integrity: sha512-OGHev8tzztVxozW8IWfJ4YUE9gc98GIyuyOcPKYHjeY4VBHeTuz0aNHuhojggS5kiR+zFR/jLVSS+495zph8+w==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@varlet/icons': 1.27.19
-      '@varlet/shared': 1.27.19
+      '@varlet/icons': 1.27.20
+      '@varlet/shared': 1.27.20
       dayjs: 1.11.4
       decimal.js: 10.3.1
       vue: 3.2.37
@@ -823,7 +823,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001375
-      electron-to-chromium: 1.4.213
+      electron-to-chromium: 1.4.215
       node-releases: 2.0.6
       update-browserslist-db: 1.0.5_browserslist@4.21.3
     dev: true
@@ -1173,8 +1173,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /electron-to-chromium/1.4.213:
-    resolution: {integrity: sha512-+3DbGHGOCHTVB/Ms63bGqbyC1b8y7Fk86+7ltssB8NQrZtSCvZG6eooSl9U2Q0yw++fL2DpHKOdTU0NVEkFObg==}
+  /electron-to-chromium/1.4.215:
+    resolution: {integrity: sha512-vqZxT8C5mlDZ//hQFhneHmOLnj1LhbzxV0+I1yqHV8SB1Oo4Y5Ne9+qQhwHl7O1s9s9cRuo2l5CoLEHdhMTwZg==}
     dev: true
 
   /error-ex/1.3.2:
@@ -3103,8 +3103,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup/2.77.2:
-    resolution: {integrity: sha512-m/4YzYgLcpMQbxX3NmAqDvwLATZzxt8bIegO78FZLl+lAgKJBd1DRAOeEiZcKOIOPjxE6ewHWHNgGEalFXuz1g==}
+  /rollup/2.77.3:
+    resolution: {integrity: sha512-/qxNTG7FbmefJWoeeYJFbHehJ2HNWnjkAFRKzWN/45eNBBF/r8lo992CwcJXEzyVxs5FmfId+vTSTQDb+bxA+g==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -3693,7 +3693,7 @@ packages:
       esbuild: 0.14.54
       postcss: 8.4.16
       resolve: 1.22.1
-      rollup: 2.77.2
+      rollup: 2.77.3
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
