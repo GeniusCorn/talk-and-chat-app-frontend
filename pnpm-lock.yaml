@@ -5,6 +5,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.33.0
   '@varlet/ui': ^1.27.20
   '@vitejs/plugin-vue': ^3.0.1
+  animate.css: ^4.1.1
   autoprefixer: ^10.4.8
   better-scroll: ^2.4.2
   eslint: ^8.21.0
@@ -20,11 +21,14 @@ specifiers:
   vite: ^3.0.5
   vue: ^3.2.37
   vue-tsc: ^0.38.9
+  vue3-touch-events: ^4.1.0
 
 dependencies:
   '@varlet/ui': 1.27.20_vue@3.2.37
+  animate.css: 4.1.1
   better-scroll: 2.4.2
   vue: 3.2.37
+  vue3-touch-events: 4.1.0
 
 devDependencies:
   '@typescript-eslint/eslint-plugin': 5.33.0_njno5y7ry2l2lcmiu4tywxkwnq
@@ -587,6 +591,10 @@ packages:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
     dev: true
+
+  /animate.css/4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
+    dev: false
 
   /ansi-regex/5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -3734,6 +3742,10 @@ packages:
       '@vue/runtime-dom': 3.2.37
       '@vue/server-renderer': 3.2.37_vue@3.2.37
       '@vue/shared': 3.2.37
+
+  /vue3-touch-events/4.1.0:
+    resolution: {integrity: sha512-fZKusOiBJzDPsY34tXYl/Wo9c2ONzBuQmF0+oHqVWr+TDbf90CgMWLHZsTv1KaShXjt+oeLow7BDVBpXW6lfXQ==}
+    dev: false
 
   /wawoff2/1.0.2:
     resolution: {integrity: sha512-qxuTwf5tAP/XojrRc6cmR0hGvqgD3XUxv2fzfzURKPDfE7AeHmtRuankVxdJ4DRdSKXaE5QlyJT49yBis2vb6Q==}

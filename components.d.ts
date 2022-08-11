@@ -7,14 +7,17 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    AppBar: typeof import('./src/components/AppBar.vue')['default']
-    BottomNavigation: typeof import('./src/components/BottomNavigation.vue')['default']
+    AppBar: typeof import('./src/components/common/AppBar.vue')['default']
+    BottomNavigation: typeof import('./src/components/common/BottomNavigation.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    MessageBox: typeof import('./src/components/MessageBox.vue')['default']
+    MessageBox: typeof import('./src/components/chat/MessageBox.vue')['default']
     VarAppBar: typeof import('@varlet/ui')['_AppBarComponent']
     VarBottomNavigation: typeof import('@varlet/ui')['_BottomNavigationComponent']
     VarBottomNavigationItem: typeof import('@varlet/ui')['_BottomNavigationItemComponent']
     VarButton: typeof import('@varlet/ui')['_ButtonComponent']
     VarIcon: typeof import('@varlet/ui')['_IconComponent']
+  }
+  export interface ComponentCustomProperties {
+    vRipple: typeof import('@varlet/ui')['_RippleComponent']
   }
 }
