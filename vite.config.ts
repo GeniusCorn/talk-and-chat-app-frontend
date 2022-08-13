@@ -1,6 +1,7 @@
 import { VarletUIResolver } from 'unplugin-vue-components/resolvers';
 import components from 'unplugin-vue-components/vite';
 import { defineConfig } from 'vite';
+import path from 'path';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
@@ -12,4 +13,9 @@ export default defineConfig({
       resolvers: [VarletUIResolver()],
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 });

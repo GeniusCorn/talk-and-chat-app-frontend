@@ -1,5 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
+const LayoutView = () => import('../layout/LayoutView.vue');
+const LoginPage = () => import('../views/LoginPage.vue');
 const ChatPage = () => import('../views/ChatPage.vue');
 const FriendsPage = () => import('../views/FriendsPage.vue');
 const HomePage = () => import('../views/HomePage.vue');
@@ -7,30 +9,46 @@ const HomePage = () => import('../views/HomePage.vue');
 const routes = [
   {
     path: '/',
-    name: 'chat',
-    component: ChatPage,
+    name: 'login',
+    component: LoginPage,
     meta: {
       url: '/',
-      title: '聊天',
+      title: '登录',
     },
   },
   {
-    path: '/friends',
-    name: 'friends',
-    component: FriendsPage,
-    meta: {
-      url: '/friends',
-      title: '好友',
-    },
-  },
-  {
-    path: '/home',
-    name: 'home',
-    component: HomePage,
-    meta: {
-      url: '/home',
-      title: '我的',
-    },
+    path: '/main',
+    name: 'main',
+    component: LayoutView,
+    children: [
+      {
+        path: 'chat',
+        name: 'chat',
+        component: ChatPage,
+        meta: {
+          url: '/chat',
+          title: '聊天',
+        },
+      },
+      {
+        path: 'friends',
+        name: 'friends',
+        component: FriendsPage,
+        meta: {
+          url: '/friends',
+          title: '好友',
+        },
+      },
+      {
+        path: 'home',
+        name: 'home',
+        component: HomePage,
+        meta: {
+          url: '/home',
+          title: '我的',
+        },
+      },
+    ],
   },
 ];
 

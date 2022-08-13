@@ -6,7 +6,8 @@ import 'animate.css';
 import Varlet from '@varlet/ui';
 import Vue3TouchEvents from 'vue3-touch-events';
 import { createApp } from 'vue';
-import router from './router';
 import App from './App.vue';
+import router from './router';
 
-createApp(App).use(Varlet).use(router).use(Vue3TouchEvents).mount('#app');
+const app = createApp(App);
+app.use(Vue3TouchEvents).use(Varlet).use(router).mount('#app');
