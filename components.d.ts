@@ -11,12 +11,16 @@ declare module '@vue/runtime-core' {
     BottomNavigation: typeof import('./src/components/common/BottomNavigation.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     MessageBox: typeof import('./src/components/chat/MessageBox.vue')['default']
+    Profile: typeof import('./src/components/home/profile.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    UserProfile: typeof import('./src/components/home/UserProfile.vue')['default']
     VarAppBar: typeof import('@varlet/ui')['_AppBarComponent']
     VarBottomNavigation: typeof import('@varlet/ui')['_BottomNavigationComponent']
     VarBottomNavigationItem: typeof import('@varlet/ui')['_BottomNavigationItemComponent']
     VarButton: typeof import('@varlet/ui')['_ButtonComponent']
+    VarCard: typeof import('@varlet/ui')['_CardComponent']
+    VarCell: typeof import('@varlet/ui')['_CellComponent']
     VarIcon: typeof import('@varlet/ui')['_IconComponent']
   }
   export interface ComponentCustomProperties {
