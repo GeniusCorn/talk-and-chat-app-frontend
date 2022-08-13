@@ -5,7 +5,9 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      reactivityTransform: true,
+    }),
     components({
       resolvers: [VarletUIResolver()],
     }),
