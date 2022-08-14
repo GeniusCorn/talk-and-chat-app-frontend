@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     BottomNavigation: typeof import('./src/components/common/BottomNavigation.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     InputBox: typeof import('./src/components/chat/InputBox.vue')['default']
+    LoginForm: typeof import('./src/components/login/LoginForm.vue')['default']
     MessageBox: typeof import('./src/components/chat/MessageBox.vue')['default']
     Profile: typeof import('./src/components/home/profile.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
