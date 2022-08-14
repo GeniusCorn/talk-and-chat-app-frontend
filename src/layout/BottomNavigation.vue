@@ -1,42 +1,74 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { reactive, ref } from 'vue';
+import {
+  MessageFilled,
+  PermContactCalendarFilled,
+  HomeFilled,
+} from '@vicons/material';
+import { Icon } from '@vicons/utils';
 import router from '../router/index';
 
-const active = ref('chat');
+const active = reactive({
+  chat: true,
+  friends: false,
+  home: false,
+});
 
-function handleChange(): void {
-  if (active.value === 'chat') {
-    router.push('/main/chat');
-  } else if (active.value === 'friends') {
-    router.push('/main/friends');
-  } else if (active.value === 'home') {
-    router.push('/main/home');
-  }
+function goChat(): void {
+  active.chat = true;
+  active.friends = false;
+  active.home = false;
+  router.push('/main/chat');
+}
+
+function goFriends(): void {
+  active.chat = false;
+  active.friends = true;
+  active.home = false;
+  router.push('/main/friends');
+}
+
+function goHome(): void {
+  active.chat = false;
+  active.friends = false;
+  active.home = true;
+  router.push('/main/home');
 }
 </script>
 
 <template>
-  <keep-alive>
-    <var-bottom-navigation
-      v-model:active="active"
-      :fixed="true"
-      @change="handleChange"
+  <div class="fixed bottom-0 w-full grid grid-cols-3 bg-white h-14">
+    <div :class="{ active: active.chat }" class="navigate" @click="goChat">
+      <Icon size="20">
+        <MessageFilled></MessageFilled>
+      </Icon>
+      <div>聊天</div>
+    </div>
+    <div
+      :class="{ active: active.friends }"
+      class="navigate"
+      @click="goFriends"
     >
-      <var-bottom-navigation-item
-        name="chat"
-        label="聊天"
-        icon="message-processing-outline"
-      />
-
-      <var-bottom-navigation-item
-        name="friends"
-        label="好友"
-        icon="card-account-details-outline"
-      />
-
-      <var-bottom-navigation-item name="home" label="我的" icon="home" />
-    </var-bottom-navigation>
-  </keep-alive>
+      <Icon size="20">
+        <PermContactCalendarFilled></PermContactCalendarFilled>
+      </Icon>
+      <div>好友</div>
+    </div>
+    <div :class="{ active: active.home }" class="navigate" @click="goHome">
+      <Icon size="20">
+        <HomeFilled></HomeFilled>
+      </Icon>
+      <div>我的</div>
+    </div>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.navigate {
+  @apply flex flex-col text-xs justify-center items-center;
+}
+
+.active {
+  @apply text-pink-400;
+}
+</style>

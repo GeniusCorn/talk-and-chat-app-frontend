@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     AppBar: typeof import('./src/components/common/AppBar.vue')['default']
     BottomNavigation: typeof import('./src/components/common/BottomNavigation.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    InputBox: typeof import('./src/components/chat/InputBox.vue')['default']
     MessageBox: typeof import('./src/components/chat/MessageBox.vue')['default']
     Profile: typeof import('./src/components/home/profile.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
@@ -21,7 +22,11 @@ declare module '@vue/runtime-core' {
     VarButton: typeof import('@varlet/ui')['_ButtonComponent']
     VarCard: typeof import('@varlet/ui')['_CardComponent']
     VarCell: typeof import('@varlet/ui')['_CellComponent']
+    VarCol: typeof import('@varlet/ui')['_ColComponent']
     VarIcon: typeof import('@varlet/ui')['_IconComponent']
+    VarInput: typeof import('@varlet/ui')['_InputComponent']
+    VarRow: typeof import('@varlet/ui')['_RowComponent']
+    VarSpace: typeof import('@varlet/ui')['_SpaceComponent']
   }
   export interface ComponentCustomProperties {
     vRipple: typeof import('@varlet/ui')['_RippleComponent']

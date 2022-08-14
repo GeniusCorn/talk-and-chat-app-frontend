@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 const LayoutView = () => import('../layout/LayoutView.vue');
 const LoginPage = () => import('../views/LoginPage.vue');
 const ChatPage = () => import('../views/ChatPage.vue');
+const SessionPage = () => import('../views/SessionPage.vue');
 const FriendsPage = () => import('../views/FriendsPage.vue');
 const HomePage = () => import('../views/HomePage.vue');
 
@@ -49,6 +50,15 @@ const routes = [
         },
       },
     ],
+  },
+  {
+    path: '/session',
+    name: 'session',
+    component: SessionPage,
+    meta: {
+      url: '/session',
+      title: '会话',
+    },
   },
 ];
 
