@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppBar: typeof import('./src/components/common/AppBar.vue')['default']
     BottomNavigation: typeof import('./src/components/common/BottomNavigation.vue')['default']
+    DialogBox: typeof import('./src/components/chat/DialogBox.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     InputBox: typeof import('./src/components/chat/InputBox.vue')['default']
     LoginForm: typeof import('./src/components/login/LoginForm.vue')['default']
