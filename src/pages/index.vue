@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import router from '@/router'
+</script>
 
 <template>
   <div flex="~ col" h-screen justify-center items-center gap-4>
@@ -28,7 +30,9 @@
         indent-1
         placeholder="密码"
       />
-      <button rounded bg-pink-300 h-8 border>登录</button>
+      <button rounded bg-pink-300 h-8 border @click="router.push('/message')">
+        登录
+      </button>
       <button rounded bg-sky-300 h-8 border>注册</button>
     </div>
   </div>

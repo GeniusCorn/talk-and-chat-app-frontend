@@ -1,12 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
+  <TopHeader />
   <RouterView />
+  <MenuBar />
 </template>
 
-<style>
-body {
-  margin: 0;
-  overflow: hidden;
-}
-</style>
+<style scoped></style>

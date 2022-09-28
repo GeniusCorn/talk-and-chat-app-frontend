@@ -49,7 +49,7 @@ function switchRoute(path: string) {
 </script>
 
 <template>
-  <div grid="~ cols-3" fixed bottom-0 w-full h-16>
+  <div grid="~ cols-3" fixed bottom-0 w-full class="h-[8vh]">
     <div flex="~" justify-center items-center @click="router.push('/message')">
       <div
         i-tabler-messages
