@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: [
     './.eslintrc-auto-import.json',
-    'plugin:vue/vue3-essential',
+    'plugin:vue/vue3-recommended',
     'standard-with-typescript',
     'prettier'
   ],
@@ -16,5 +16,7 @@ module.exports = {
     parser: '@typescript-eslint/parser'
   },
   plugins: ['vue'],
-  rules: {}
+  rules: {
+    'vue/multi-word-component-names': 'off'
+  }
 }

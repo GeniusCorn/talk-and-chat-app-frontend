@@ -1,5 +1,3 @@
-import { presetAttributify, presetIcons, presetTagify, presetUno } from 'unocss'
-
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import Layouts from 'vite-plugin-vue-layouts'
@@ -55,9 +53,7 @@ export default defineConfig({
       extensions: ['vue'],
       dts: true
     }),
-    Unocss({
-      presets: [presetUno(), presetAttributify(), presetIcons(), presetTagify()]
-    }),
+    Unocss(),
     Pages(),
     Layouts()
   ]
