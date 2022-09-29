@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import router from '@/router'
 import BScroll from '@better-scroll/core'
 
 const scroll: HTMLElement = $ref()
@@ -12,10 +13,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="scroll" class="h-[84vh]" overflow-hidden>
+  <div ref="scroll" h="[84vh]" overflow-hidden>
     <div>
       <div v-for="n in 20" :key="n">
-        <MessageBox />
+        <MessageBox @click="router.push('/chat')" />
       </div>
     </div>
   </div>

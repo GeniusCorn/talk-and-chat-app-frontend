@@ -40,7 +40,7 @@ function switchRoute(path: string) {
 <template>
   <div
     bg-pink-400
-    class="h-[8vh]"
+    h="8vh"
     flex="~"
     justify-center
     items-center
