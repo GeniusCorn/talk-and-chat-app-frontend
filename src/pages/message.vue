@@ -10,13 +10,19 @@ onMounted(() => {
     click: true
   })
 })
+
+const show = $ref(false)
 </script>
 
 <template>
+  <Teleport to="body">
+    <ChatPage :show="show" @close="show = false" />
+  </Teleport>
+
   <div ref="scroll" h="[84vh]" overflow-hidden>
     <div>
       <div v-for="n in 20" :key="n">
-        <MessageBox @click="router.push('/chat')" />
+        <MessageBox @click="show = !show" />
       </div>
     </div>
   </div>

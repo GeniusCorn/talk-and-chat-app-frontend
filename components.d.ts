@@ -7,6 +7,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Chat: typeof import('./src/components/message/chat.vue')['default']
+    ChatPage: typeof import('./src/components/message/ChatPage.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     MenuBar: typeof import('./src/components/common/MenuBar.vue')['default']
     MessageBox: typeof import('./src/components/common/MessageBox.vue')['default']
