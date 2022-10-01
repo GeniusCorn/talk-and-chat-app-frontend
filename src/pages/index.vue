@@ -30,10 +30,17 @@ import router from '@/router'
         indent-1
         placeholder="密码"
       />
-      <button rounded bg-pink-300 h-8 border @click="router.push('/message')">
+      <button
+        rounded
+        bg-pink-300
+        h-8
+        border
+        shadow-lg
+        @click="router.push('/message')"
+      >
         登录
       </button>
-      <button rounded bg-sky-300 h-8 border>注册</button>
+      <button rounded bg-sky-300 h-8 border shadow-lg>注册</button>
     </div>
   </div>
 </template>
