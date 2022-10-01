@@ -40,7 +40,16 @@ import router from '@/router'
       >
         登录
       </button>
-      <button rounded bg-sky-300 h-8 border shadow-lg>注册</button>
+      <button
+        rounded
+        bg-sky-300
+        h-8
+        border
+        shadow-lg
+        @click="router.push('/register')"
+      >
+        注册
+      </button>
     </div>
   </div>
 </template>
