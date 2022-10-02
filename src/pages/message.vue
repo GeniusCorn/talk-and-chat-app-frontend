@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import router from '@/router'
 import BScroll from '@better-scroll/core'
+import ObserveDOM from '@better-scroll/observe-dom'
 
 const scroll: HTMLElement = $ref()
 
+BScroll.use(ObserveDOM)
 onMounted(() => {
-  const bs = new BScroll(scroll, {
+  BScroll(scroll, {
     probeType: 3,
-    click: true
+    click: true,
+    observeDom: true
   })
 })
 
